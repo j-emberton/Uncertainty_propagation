@@ -3,7 +3,7 @@ import os
 import tempfile
 import pytest
 import yaml
-from ..src.read_input import ReadInput
+from src.read_input import ReadInput
 
 # Helper function to create a temporary YAML file
 def create_temp_yaml(data):
