@@ -16,7 +16,7 @@ class ReadInput:
             file_name (str): Name of the input file
         """
         self.file_name = file_name
-        self.working_dir = os.getcwd()
+        self.working_dir = os.path.dirname(os.path.abspath(__file__))
         self.dict: dict = self.yaml_to_dict(self._join_path())
 
     def _join_path(self):
