@@ -1,0 +1,25 @@
+name: Run pytest
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: windows-latest  # Use the latest version of Windows
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.11 # You can change this to your desired Python version
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt  # Replace with your requirements file if you have one
+
+    - name: Run tests
+      run: |
+        python -m pytest
