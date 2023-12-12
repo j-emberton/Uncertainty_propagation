@@ -29,7 +29,7 @@ def test_read_input_file_found():
 def test_read_input_file_not_found():
     # Instantiate ReadInput class with a non-existent file
     with pytest.raises(FileNotFoundError) as e:
-        reader = ReadInput("nonexistent.yaml")
+        ReadInput("nonexistent.yaml")
 
     # Assert that the specific exception type is raised
     assert isinstance(e.value, FileNotFoundError)
@@ -42,7 +42,7 @@ def test_read_input_invalid_yaml():
 
     # Instantiate ReadInput class
     with pytest.raises(yaml.YAMLError) as e:
-        reader = ReadInput(os.path.basename(yaml_file))
+        ReadInput(os.path.basename(yaml_file))
 
     # Assert that the specific exception type is raised
     assert isinstance(e.value, yaml.YAMLError)
