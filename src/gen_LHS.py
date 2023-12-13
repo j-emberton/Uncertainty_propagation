@@ -27,7 +27,7 @@ class LHS:
         """Parses the input dictionary and generates a LHS."""
         column_names = self._get_dimension_names()
         self.dimensions = len(column_names)
-        means, std_devs = self._extract_mean_std_dev(self.data, column_names)
+        means, std_devs = self._extract_mean_std_dev(column_names)
         df = self._gen_LHS(means, std_devs, column_names)
         return df
     
