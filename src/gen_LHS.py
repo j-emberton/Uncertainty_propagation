@@ -61,7 +61,7 @@ class LHS:
                 
                 Returns:
                     df (pd.DataFrame): DataFrame containing the LHS."""
-        design = doe.lhs(self.dimensions, samples=self.samples, criterion=self.criterion, iterations=self.iterations, random_state=self.random_state)
+        design = doe.lhs(self.dimensions, samples=self.samples, criterion=self.criterion)
 
         for i in range(self.dimensions):
             design[:, i] = norm(loc=means[column_names[i]], scale=std_devs[column_names[i]]).ppf(design[:, i])
