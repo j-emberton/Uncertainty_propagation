@@ -5,14 +5,12 @@ from scipy.stats.distributions import norm
 class LHS:
     """Generates a Latin Hypercube Sample (LHS) from a dictionary of means and standard deviations."""
 
-    def __init__(self, data: dict, samples: int = 1000, criterion: str = 'maximin', iterations: int = 1000, random_state: int = None):
+    def __init__(self, data: dict, samples: int = 1000, criterion: str = 'maximin'):
         """
         Args:
             data (dict): Dictionary of means and standard deviations for each dimension.
             samples (int, optional): Number of samples to generate. Defaults to 1000.
             criterion (str, optional): Criterion to use for generating the LHS. Defaults to 'maximin'.
-            iterations (int, optional): Number of iterations to use for generating the LHS. Defaults to 1000.
-            random_state (int, optional): Random state to use for generating the LHS. Defaults to None.
             
             """
         self.data = data

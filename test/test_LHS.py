@@ -11,8 +11,6 @@ data = {
 }
 samples = 1000
 criterion = 'maximin'
-iterations = 1000
-random_state = 42
 
 # Initialize LHS object
 lhs = LHS(data, samples, criterion, iterations, random_state)
