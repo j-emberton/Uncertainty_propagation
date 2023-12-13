@@ -4,10 +4,15 @@
 #                                                                                                            #
 
 # This is the input file template. You can copy this file and rename it to create a new input file.
+# Save your copy of this file in your working directory. The input file must be named "input.yaml".
+
+
 # The input file is a YAML file. You can find more information about YAML here: https://yaml.org/
 
 # The input file is divided into sections. Each section is a YAML dictionary. The sections correspond to input
 # variables for the model:
+
+To 
 
 Variable 1:
   mean: 1.0
