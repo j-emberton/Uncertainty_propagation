@@ -13,7 +13,7 @@ samples = 1000
 criterion = 'maximin'
 
 # Initialize LHS object
-lhs = LHS(data, samples, criterion, iterations, random_state)
+lhs = LHS(data, samples, criterion=criterion)
 
 # Test parsing the input dictionary
 def test_parse_input_dict():
