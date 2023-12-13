@@ -1,4 +1,4 @@
-import pydoe as doe
+import pyDOE as doe
 import pandas as pd
 from scipy.stats.distributions import norm
 
