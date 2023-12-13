@@ -5,8 +5,8 @@
 This project is intended to provide a facility to assess the impact of input uncertainty on analysis outputs via latin hypercube sampling.
 
 Underlying principles:
-    - define input variables and their statistical characteristics in an input yaml file \n
-    - use these definitions to generate a random latin hypercube sampling scheme with samples weighted by equal area under CDF \n
+    - define input variables and their statistical characteristics in an input yaml file
+    - use these definitions to generate a random latin hypercube sampling scheme with samples weighted by equal area under CDF
     - run each sample from the LHS dataset and collate results
     - collate and regress statistical description onto output variables
     - test output data for confidence level of mean values
