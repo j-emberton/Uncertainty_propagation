@@ -32,7 +32,7 @@ Under development. Publicly available for code review only.
 
 ## Contributing
 
-If you want to contribute to this project, please contact the
+If you want to contribute to this project, please contact the author
 
 ## License
 
