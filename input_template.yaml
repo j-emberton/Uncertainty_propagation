@@ -1,0 +1,25 @@
+##############################################################################################################
+#                                          INPUT FILE TEMPLATE                                               #
+##############################################################################################################
+#                                                                                                            #
+
+# This is the input file template. You can copy this file and rename it to create a new input file.
+# The input file is a YAML file. You can find more information about YAML here: https://yaml.org/
+
+# The input file is divided into sections. Each section is a YAML dictionary. The sections correspond to input
+# variables for the model:
+
+Variable 1:
+  mean: 1.0
+  std_dev: 0.25
+  # The mean and standard deviation of the variable. The variable is assumed to be normally distributed.
+
+Variable 2:
+  mean: 2.0
+  std_dev: 0.5
+
+Variable 3:
+  mean: 3.0
+  std_dev: 0.75
+
+
