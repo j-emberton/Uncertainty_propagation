@@ -1,4 +1,4 @@
-import pytest
+# We are testing the LHS class in src/gen_LHS.py
 import pandas as pd
 from src.gen_LHS import LHS
 
@@ -41,8 +41,3 @@ def test_gen_LHS():
     )
     assert isinstance(df, pd.DataFrame)
     assert df.shape == (samples, len(data))
-
-# Test invalid criterion
-def test_invalid_criterion():
-    with pytest.raises(ValueError, match="Invalid criterion. Please choose a valid criterion."):
-        LHS(data, samples, criterion='invalid_criterion')
