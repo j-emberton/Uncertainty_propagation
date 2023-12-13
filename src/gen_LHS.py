@@ -17,8 +17,6 @@ class LHS:
         self.dimensions = None
         self.samples = samples
         self.criterion = criterion
-        self.iterations = iterations
-        self.random_state = random_state
         self.sample_dataframe = self._parse_input_dict()
 
     def _parse_input_dict(self):
